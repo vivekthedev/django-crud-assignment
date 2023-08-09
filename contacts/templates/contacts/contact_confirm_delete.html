@@ -1,0 +1,8 @@
+{% extends 'contacts/base.html' %}
+{% block content %}
+<form method="post" class="form-control my-5">
+    {% csrf_token %}
+    <div class="display-6"> Press Confirm to delete the selected object: {{object}} -</div>
+    <input type="submit" class="btn btn-danger" value="Confirm">
+</form>
+{% endblock content %}
